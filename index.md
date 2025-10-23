@@ -2,7 +2,6 @@
 site: sandpaper::sandpaper_site
 ---
 
-
 This is a Byte-Sized RSE Lesson on Integrated Development Environments (IDEs), part of the [Byte-Sized RSE Series](https://github.com/carpentries-incubator/byte-sized-rse-overview/tree/main).
 
 ## Learning Objectives
@@ -12,8 +11,3 @@ This is a Byte-Sized RSE Lesson on Integrated Development Environments (IDEs), p
 - Explain the importance of debugging and list common debugging techniques
 - Demonstrate how to use a debugger within an IDE like Visual Studio Code
 - Recognise the benefits of using an IDE for improving code quality, reducing errors, and accelerating software development
-
-
-
-[workbench]: https://carpentries.github.io/sandpaper-docs
-
