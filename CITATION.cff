@@ -22,7 +22,7 @@ authors:
     url: "https://github.com/anenadic"
 date-released: "2025-10-23"
 license: "CC-BY-4.0"
-type: "software"
+type: "generic"
 keywords:
   - research software engineering
   - RSE
