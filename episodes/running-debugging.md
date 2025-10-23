@@ -1,5 +1,5 @@
 ---
-title: "1.4 Running and Debugging Code"
+title: "Running and Debugging Code"
 teaching: 10
 exercises: 0
 ---
