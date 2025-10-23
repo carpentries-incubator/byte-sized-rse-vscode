@@ -1,5 +1,5 @@
 ---
-title: "1.3 Using the Code Editor"
+title: "Using the Code Editor"
 teaching: 10
 exercises: 0
 ---

@@ -1,5 +1,5 @@
 ---
-title: "1.2 Getting Started with VSCode"
+title: "Getting Started with VSCode"
 teaching: 10
 exercises: 0
 ---
