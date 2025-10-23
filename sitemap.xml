@@ -25,6 +25,9 @@
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/code-editor.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/images.html</loc>
   </url>
   <url>
@@ -55,6 +58,9 @@
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/aio.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/code-editor.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/images.html</loc>
   </url>
   <url>
@@ -76,6 +82,12 @@
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/running-debugging.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/running-vscode.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor-notes.html</loc>
   </url>
   <url>
@@ -89,5 +101,11 @@
   </url>
   <url>
     <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/running-debugging.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries-incubator.github.io/byte-sized-rse-vscode/running-vscode.html</loc>
   </url>
 </urlset>
