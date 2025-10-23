@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Lesson Title: Key Points</title>
+<title>Byte-sized RSE: Key Points</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="../assets/themetoggle.js"></script><link rel="stylesheet" type="text/css" href="../assets/styles.css">
 <script src="../assets/scripts.js" type="text/javascript"></script><!-- mathjax --><script type="text/x-mathjax-config">
@@ -34,13 +34,13 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-8">
       <div class="large-logo">
-        <img id="incubator-logo" alt="Lesson Description" src="../assets/images/incubator-logo.svg"><span class="badge text-bg-danger">
-          <abbr title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.">
+        <img id="incubator-logo" alt="Byte-sized RSE" src="../assets/images/incubator-logo.svg"><span class="badge text-bg-warning">
+          <abbr title="This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.">
             <a href="https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html" class="external-link alert-link">
-              <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
-              Pre-Alpha
+              <i aria-hidden="true" class="icon" data-feather="alert-triangle" style="border-radius: 5px"></i>
+              Alpha
             </a>
-            <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
+            <span class="visually-hidden">This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback.</span>
           </abbr>
         </span>
 
@@ -91,10 +91,10 @@
       <span class="menu-title">Menu</span>
     </button>
     <div class="nav-logo">
-      <img class="small-logo" alt="Lesson Description" src="../assets/images/incubator-logo-sm.svg">
+      <img class="small-logo" alt="Byte-sized RSE" src="../assets/images/incubator-logo-sm.svg">
 </div>
     <div class="lesson-title-md">
-      Lesson Title
+      Byte-sized RSE
     </div>
     <div class="search-icon-sm">
       <!-- TODO: do not show until we have search
@@ -105,7 +105,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item">
           <span class="lesson-title">
-            Lesson Title
+            Byte-sized RSE
           </span>
         </li>
         <li class="nav-item">
@@ -142,7 +142,7 @@
   </div>
 <!--/div.container-fluid -->
 </nav><div class="col-md-12 mobile-title">
-  Lesson Title
+  Byte-sized RSE
 </div>
 
 <aside class="col-md-12 lesson-progress"><div style="width: %" class="percentage">
@@ -244,7 +244,43 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Using Markdown</a>
+        <a href="1-introduction.html">Code Development &amp; Debugging with IDEs</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="2-running-vscode.html">1.2 Getting Started with VSCode</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="3-code-editor.html">1.3 Using the Code Editor</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="4-running-debugging.html">1.4 Running and Debugging Code</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -308,17 +344,62 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="introduction"><h2 class="section-heading"><a href="introduction.html">Using Markdown</a></h2>
+<section id="1-introduction"><h2 class="section-heading"><a href="1-introduction.html">Code Development &amp; Debugging with IDEs</a></h2>
 <hr class="half-width">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Integrated Development Environments (IDEs) are all-in-one tools for
+writing, editing, testing, and debugging code, improving developer
+efficiency by reducing the need to switch between different
+applications.</li>
+<li>Common IDE features include code editing, syntax highlighting, code
+completion, version control integration, debugging tools, project
+navigation, and built-in terminals.</li>
+<li>Debugging is the process of finding and fixing bugs in code to
+ensure it behaves as intended, improving code quality and
+reliability.</li>
+<li>Common debugging techniques include adding print statements, using
+built-in debuggers to set breakpoints and inspect variables, writing
+tests, and using logging.</li>
+<li>Using an IDE for debugging allows developers to step through their
+code interactively, making error detection and resolution much faster
+and more effective.</li>
+</ul></section><section id="2-running-vscode"><h2 class="section-heading"><a href="2-running-vscode.html">1.2 Getting Started with VSCode</a></h2>
+<hr class="half-width">
+<ul>
+<li>Key VSCode features are accessible via the left navigation bar and
+the menu</li>
+<li>VSCode’s capabilities can be increased by installing extensions</li>
+<li>Language-specific support is available via extensions</li>
+<li>A VSCode “workspace” is a project that consists of a collection of
+folder and files</li>
+<li>Git source code repositories on GitHub can be cloned locally and
+opened from within VSCode</li>
+</ul></section><section id="3-code-editor"><h2 class="section-heading"><a href="3-code-editor.html">1.3 Using the Code Editor</a></h2>
+<hr class="half-width">
+<ul>
+<li>IDEs typically have a host of features that help save time when
+writing code</li>
+<li>Syntax highlighting gives you immediate feedback of potential issues
+as you write code</li>
+<li>Code completion helps to automatically finish incomplete code
+statements and names</li>
+</ul></section><section id="4-running-debugging"><h2 class="section-heading"><a href="4-running-debugging.html">1.4 Running and Debugging Code</a></h2>
+<hr class="half-width">
+<ul>
+<li>Run a script by selecting the “Play” icon in VSCode</li>
+<li>Debugging allows us to pause and inspect the internal state of a
+program while it is running</li>
+<li>Specify the points a debugger should pause by adding breakpoints to
+specific lines of code</li>
+<li>When a breakpoint is reached, a debugger typically shows you the
+current variables and their values and the stack of functions called to
+reach the current state</li>
+<li>Debuggers typically allow us to: step through the code a statement
+at a time, step into or out of a function call if we need further
+debugging information regarding that function, and continue execution
+until another breakpoint is reached or the end of the program</li>
+<li>Testing is used to identify the existence of a problem, whilst we
+use debugging to locate the source of a problem</li>
 </ul></section>
 </div>
     </main>
@@ -332,12 +413,12 @@ locally</li>
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-md/blob/main/CITATION.cff" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/blob/main/CITATION.cff" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
 
@@ -357,16 +438,16 @@ locally</li>
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://carpentries.github.io/workbench-template-md/instructor/key-points.html",
+  "@id": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/key-points.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "software, data, lesson, The Carpentries",
+  "keywords": "software, RSE, research software, development, practices",
   "name": "Key Points",
   "creativeWorkStatus": "active",
-  "url": "https://carpentries.github.io/workbench-template-md/instructor/key-points.html",
-  "identifier": "https://carpentries.github.io/workbench-template-md/instructor/key-points.html",
-  "dateCreated": "2025-10-23",
+  "url": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/key-points.html",
+  "identifier": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/key-points.html",
+  "dateCreated": "2025-01-15",
   "dateModified": "2025-10-23",
   "datePublished": "2025-10-23"
 }
