@@ -18,13 +18,13 @@ carpentry: 'incubator'
 carpentry_description: 'Byte-sized RSE'
 
 # Overall title for pages.
-title: 'Byte-sized RSE'
+title: 'Byte-sized RSE: Code Development & Debugging with IDEs'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created: 2025-01-15
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, RSE, research software, development, practices'
+keywords: 'software, RSE, research software, development, practices, ide'
 
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
