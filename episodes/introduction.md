@@ -1,5 +1,5 @@
 ---
-title: "Code Development & Debugging with IDEs"
+title: "Introduction"
 teaching: 15
 exercises: 0
 ---
