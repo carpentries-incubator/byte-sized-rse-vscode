@@ -2,6 +2,8 @@
 title: Setup
 ---
 
+## Setup
+
 ::: prereq
 
 - Shell with Git version control tool installed 
