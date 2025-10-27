@@ -2,7 +2,7 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is a Byte-Sized RSE Lesson on Integrated Development Environments (IDEs), part of the [Byte-Sized RSE Series](https://carpentries-incubator.github.io/byte-sized-rse-overview/).
+This is a Byte-Sized RSE lesson on integrated development environments (IDEs), part of the [Byte-Sized RSE Series](https://carpentries-incubator.github.io/byte-sized-rse-overview/).
 
 ## Learning Objectives
 

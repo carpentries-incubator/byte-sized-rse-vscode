@@ -1,6 +1,6 @@
-## Byte-Sized RSE Lesson on Integrated Development Environments (IDEs)
+## Byte-Sized RSE Lesson: Integrated Development Environments (IDEs)
 
-This is a Byte-Sized RSE Lesson on Integrated Development Environments (IDEs), part of the [Byte-Sized RSE Series](https://github.com/carpentries-incubator/byte-sized-rse-overview/tree/main).
+This is a Byte-Sized RSE lesson on integrated development environments (IDEs), part of the [Byte-Sized RSE Series](https://github.com/carpentries-incubator/byte-sized-rse-overview/tree/main).
 
 ### Questions
 
@@ -10,6 +10,8 @@ This is a Byte-Sized RSE Lesson on Integrated Development Environments (IDEs), p
 - How can you use a debugger in an IDE like Visual Studio Code to find and fix errors in your code?
 
 ### Learning objectives
+
+At the end of this lesson, learners should be able to:
 
 - Define what an Integrated Development Environment (IDE) is and describe its role in the software development process
 - Identify common features of IDEs and explain how they support efficient code writing, debugging, and software project management
