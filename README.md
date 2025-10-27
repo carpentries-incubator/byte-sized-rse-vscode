@@ -1,4 +1,4 @@
-## Byte-Sized RSE Lesson: Integrated Development Environments (IDEs)
+## Byte-Sized RSE: Integrated Development Environments (IDEs)
 
 This is a Byte-Sized RSE lesson on integrated development environments (IDEs), part of the [Byte-Sized RSE Series](https://github.com/carpentries-incubator/byte-sized-rse-overview/tree/main).
 
