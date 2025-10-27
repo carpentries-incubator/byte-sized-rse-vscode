@@ -66,7 +66,7 @@ Let’s look at what most IDEs offer - these features all work together to make 
 - An integrated terminal for executing commands directly within the IDE
 - A project/file explorer for easy navigation and management of your software project
 
-Some IDEs also offfer: 
+Some IDEs also offer: 
 
 - Deployment tools to package and release your code efficiently
 - Basic project and issue tracking features to support task management
@@ -90,7 +90,7 @@ Debugging is an essential step in software development, ensuring that your code 
 
 ### Why Debugging Matters?
 
-Debuggin ensures your code behaves as it should and helps you find the root cause of problems — not just guess - when it does not.
+Debugging ensures your code behaves as it should and helps you find the root cause of problems — not just guess - when it does not.
 Even small mistakes in code can cause unexpected behavior or crashes. Debugging helps with:
 
 - **code correctness** - to ensure your program works as expected and meets requirements
