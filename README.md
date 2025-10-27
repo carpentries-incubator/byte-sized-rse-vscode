@@ -9,7 +9,7 @@ This is a Byte-Sized RSE lesson on integrated development environments (IDEs), p
 - Why is debugging important, and what are the main techniques developers use to debug their code?
 - How can you use a debugger in an IDE like Visual Studio Code to find and fix errors in your code?
 
-### Learning objectives
+### Learning Objectives
 
 At the end of this lesson, learners should be able to:
 
