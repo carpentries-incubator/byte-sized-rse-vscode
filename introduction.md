@@ -59,7 +59,7 @@ Let’s look at what most IDEs offer - these features all work together to make 
 - Code editor with syntax highlighting and automatic code formatting for better readability and consistency
 - Intelligent code completion that suggests syntactically correct options as you type to speed up development
 - Powerful search tools to quickly locate functions, classes, or variables
-- Inline documentation and reference lookup to understand symbol (functions, parameters, classes, fields, and methods) and variables definitions and usage without leaving your code
+- Inline documentation and reference lookup to understand symbols (functions, parameters, classes, fields, and methods) and variables definitions and usage without leaving your code
 - Built-in support for running and managing tests through integrated testing frameworks
 - Seamless integration with version control systems (like Git) for tracking changes and collaboration
 - Debugging tools for setting breakpoints, stepping through code, and inspecting variables during runtime
