@@ -90,6 +90,14 @@ What's really handy is the little video that shows us what it does
 This looks exactly like what we're after!
 Select `Install`.
 
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's been able to install the autoDocstring extension?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 Now, when we go to a function for example `FahrToCelsius`, go to the next line, and add `"""`, we'll see a small pop-up to add a docstring. Press `Tab` to do so.
 
 It does all the hard work of adding in the structure of a docstring for us, so we just need to fill in the blanks.
@@ -106,6 +114,14 @@ This is another good example of us realising it would be nice to have something 
         int: temperature in Celsius
     """
 ```
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's been able to fill in the blanks in their docstring?
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 
 ::::::::::::::::::::::::::::::::::::::::: callout

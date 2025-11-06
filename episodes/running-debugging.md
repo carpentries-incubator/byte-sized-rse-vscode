@@ -46,6 +46,14 @@ Max temperature in Celsius 16.33888888888889 Kelvin 289.4888888888889
 steve@laptop:~/code-style-example$ 
 ```
 
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's run their Python progran and seen some output in a pop-up window?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 ::::::::::::::::::::::::::::::::::::::::: callout
 
 ## Error: `the term conda is not recognised`
@@ -56,9 +64,17 @@ In this case, you may need to configure VSCode accordingly:
 
 1. Activate the Command Palette, either by selecting `View` and `Command Palette` in the menu, or by pressing `Ctrl` + `Shift` + `P` simultaneously
 1. then type `Terminal: Select Default Profile`
-1. From the options, select `Command Prompt C:\WINDOWS\...`
+1. From the options, select the entry that's something like `Command Prompt C:\WINDOWS\...`
 
 Hopefully that should resolve the issue.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+If you're using Conda and encountered this error, did it fix it?
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 :::::::::::::::::::::::::::::::::::::::::
 
@@ -99,6 +115,15 @@ We perhaps might assume one of our colleagues erroneously made this change, but 
 We try to run the code as before, and now it doesn't work.
 We get a `ValueError`, which informs us it couldn't perform a conversion of a value extracted from the data file to a float as part of its temperature conversion.
 
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's added this error into their code and sees a `ValueError` in the terminal output?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
+
 ### Adding a Debugging Breakpoint
 
 Now we know where the error is occurring but we don't know the source of the problem, which may not be in the same place.
@@ -108,6 +133,15 @@ Let's add it at the start of the `for line in climate_data:` line.
 We do that by clicking in the left margin for that line.
 By hovering in the margin, you'll see a faded red dot appear.
 Select it on that line and this sets the breakpoint.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's set a breakpoint in their code?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 
 ### Using the Debugger
 
@@ -121,6 +155,15 @@ Then it will likely ask two questions in pop-up pane near the top:
 Now the Python script is running in debug mode.
 You'll see the execution has paused on the line we entered the breakpoint, which is now highlighted.
 Some new information is now displayed in various panes on the left of the code editor.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's run the code in debug mode and and seen their code paused at the breakpoint?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 In particular:
 
 - `VARIABLES` - on the left, we can see a list of variables, and their current state, at this point in the script's execution, such as `comment` and `shift`, and `climate_data` (which is a reference to our open data file).
@@ -179,6 +222,15 @@ Now we have our solution fixed, we can stop the debugger again.
 
 We've now solved our problem, so we should remove the breakpoint.
 Running our code again as normal, we can see it now works as expected.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's fixed their problem and successfully re-run their code?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 
 ## Debugging in Context
 

@@ -72,6 +72,15 @@ Let's install an extension now:
 1. Then select `Install`.
 
 It might take a minute - you can see a sliding blue line in the top left to indicate it's working.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's successfully managed to install the Python extension?
+
+::::::::::::::::::::::::::::::::::::::::: 
+
 Once complete, you should see a couple of "Welcome" windows introducing you to two of its key features - support for Python and Jupyter notebooks.
 If you use Jupyter notebooks, which is a way of writing Python programs that you can run line by line from within an editor as you write the program, you may find this useful.
 
@@ -82,6 +91,14 @@ For now, let's configure this extension for our Python development, and to do th
 1. A list of available Python installations should appear. You may find you have many installations of Python, or only have one. Try to select the version later than 3.8 if you can.
 
 Once selected, the default Python interpreter for VSCode will be configured.
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's configured the Python extension?
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 ## A Sample Project
 
@@ -110,6 +127,14 @@ Then use the file browser that is presented to find a convenient location to sto
 then select `Open` when ‘Would you like to open the cloned repository?' popup appears.
 
 :::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Checkpoint: Attendee Progress
+
+Who's been able to download the code and open it within VSCode?
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 You may be presented with a window asking whether you trust the authors of this code.
 In general, it's a good idea to be at least a little wary, since you're obtaining code from the internet, so be sure to check your sources!
