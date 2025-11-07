@@ -605,7 +605,7 @@ and more effective.</li>
 </div>
 </section></section><section id="aio-running-vscode"><p>Content from <a href="running-vscode.html">Getting Started with VSCode</a></p>
 <hr>
-<p>Last updated on 2025-10-28 |
+<p>Last updated on 2025-11-07 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/episodes/running-vscode.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -724,19 +724,58 @@ is the Microsoft official Python extension.</li>
 <li>Then select <code>Install</code>.</li>
 </ol>
 <p>It might take a minute - you can see a sliding blue line in the top
-left to indicate it’s working. Once complete, you should see a couple of
-“Welcome” windows introducing you to two of its key features - support
-for Python and Jupyter notebooks. If you use Jupyter notebooks, which is
-a way of writing Python programs that you can run line by line from
-within an editor as you write the program, you may find this useful.</p>
+left to indicate it’s working.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>Who’s successfully managed to install the Python extension?</p>
+</div>
+</div>
+</div>
+</div>
+<p>Once complete, you should see a couple of “Welcome” windows
+introducing you to two of its key features - support for Python and
+Jupyter notebooks. If you use Jupyter notebooks, which is a way of
+writing Python programs that you can run line by line from within an
+editor as you write the program, you may find this useful.</p>
 <p>For now, let’s configure this extension for our Python development,
 and to do that, we need to tell VSCode which Python installation on our
-machine we’d like it to use. In the Python Welcome window, select
-<code>Select a Python interpreter</code>, and then
-<code>Select Python interpreter</code>. You may find you have many
-installations of Python, or only have one. Try to select the version
-later than 3.8 if you can. Then select <code>Mark done</code>, and close
-the Welcome window.</p>
+machine we’d like it to use. VSCode has a sophisticated method to access
+it’s inner functionality known as the Command Palette, which we’ll use
+to address this.</p>
+<ol style="list-style-type: decimal">
+<li>Select <code>View</code> and <code>Command Palette</code> from the
+VSCode menu</li>
+<li>Begin typing <code>Python: Select Interpreter</code>, and then
+select it when it appears</li>
+<li>A list of available Python installations should appear. You may find
+you have many installations of Python, or only have one. Try to select
+the version later than 3.8 if you can.</li>
+</ol>
+<p>Once selected, the default Python interpreter for VSCode will be
+configured.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div class="accordion-body">
+<p>Who’s configured the Python extension?</p>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="a-sample-project">A Sample Project<a class="anchor" aria-label="anchor" href="#a-sample-project"></a>
 </h2>
 <hr class="half-width">
@@ -781,14 +820,29 @@ popup appears.</p>
 </div>
 </div>
 </div>
-<p>You’ll then likely be presented with a window asking whether you
-trust the authors of this code. In general, it’s a good idea to be at
-least a little wary, since you’re obtaining code from the internet, so
-be sure to check your sources! Be careful here - I found on Windows the
-“Trust” option appears on the left, whilst on Mac, it appears on the
-right! In this case, feel free to trust the repository! You’ll then see
-the explorer present you with some files in a small window (or pane) on
-the left you can use to navigate and find files.</p>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div class="accordion-body">
+<p>Who’s been able to download the code and open it within VSCode?</p>
+</div>
+</div>
+</div>
+</div>
+<p>You may be presented with a window asking whether you trust the
+authors of this code. In general, it’s a good idea to be at least a
+little wary, since you’re obtaining code from the internet, so be sure
+to check your sources! Be careful here - I found on Windows the “Trust”
+option appears on the left, whilst on Mac, it appears on the right! In
+this case, feel free to trust the repository! You’ll then see the
+explorer present you with some files in a small window (or pane) on the
+left you can use to navigate and find files.</p>
 <p>So far within VSCode we have downloaded some code from a repository
 and opened a folder. Whenever we open a folder in VSCode, this is
 referred to as a “Workspace” - essentially, a collection of a project’s
@@ -823,7 +877,7 @@ opened from within VSCode</li>
 </div>
 </section></section><section id="aio-code-editor"><p>Content from <a href="code-editor.html">Using the Code Editor</a></p>
 <hr>
-<p>Last updated on 2025-10-28 |
+<p>Last updated on 2025-11-07 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/episodes/code-editor.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -882,8 +936,8 @@ code folder.</p>
 </div>
 </div>
 </div>
-<p>Note that as an example, it’s deliberately written to have flaws.
-Things like the line spacing is inconsistent, there are no code
+<p>Note that as an example, the code is deliberately written to have
+flaws. Things like the line spacing is inconsistent, there are no code
 comments, there’s a variable that’s not used, and you may spot other
 issues too. But in essence, the code is designed to do the
 following:</p>
@@ -924,7 +978,8 @@ highlights some mistakes.</p>
 Pylance extensions) to help you write and format your code whilst you’re
 typing.</p>
 <p>For example, on a blank line somewhere, enter
-<code>for x in something:</code>.</p>
+<code>for x in something:</code>, and press the enter (or return)
+key.</p>
 <p>On the next line, we can see that it’s automatically indented it for
 us, knowing that we’re inside a loop.</p>
 <p>Another really helpful feature is something known as code completion
@@ -944,10 +999,10 @@ web, for example.</p>
 </section><section><h2 class="section-heading" id="need-a-thing-install-an-extension">Need a Thing? Install an Extension!<a class="anchor" aria-label="anchor" href="#need-a-thing-install-an-extension"></a>
 </h2>
 <hr class="half-width">
-<p>As we just saw, included in the list of issues with our code was the
-lack of docstrings. If we want to write good code, we should be adding
-code comments, including docstrings for our functions, methods, and
-modules.</p>
+<p>A great feature of VSCode is the ease with which we can add new
+extensions when we need them. For example, if we want to write good
+Python code, we should be adding code comments, including docstrings for
+our functions, methods, and modules.</p>
 <p>Let’s try and find an extension that might help us with writing
 docstrings. Select the <code>Extensions</code> icon, and type
 <code>docstring</code> - you should see an <code>autoDocstring</code>
@@ -957,13 +1012,56 @@ very widely used.</p>
 <p>What’s really handy is the little video that shows us what it does
 This looks exactly like what we’re after! Select
 <code>Install</code>.</p>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Who’s been able to install the autoDocstring extension?</p>
+</div>
+</div>
+</div>
+</div>
 <p>Now, when we go to a function for example <code>FahrToCelsius</code>,
 go to the next line, and add <code>"""</code>, we’ll see a small pop-up
 to add a docstring. Press <code>Tab</code> to do so.</p>
 <p>It does all the hard work of adding in the structure of a docstring
 for us, so we just need to fill in the blanks. This is another good
 example of us realising it would be nice to have something to help us,
-searching for an extension, and trying it out.</p>
+searching for an extension, and trying it out. +For example, filling in
+the blanks for our generated docstring:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>    <span class="co">"""Convert Fahrenheit to Celsius.</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co">        fahr (int): temperature in Fahrenheit</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="co">        int: temperature in Celsius</span></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="co">    """</span></span></code></pre>
+</div>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>Who’s been able to fill in the blanks in their docstring?</p>
+</div>
+</div>
+</div>
+</div>
 <div id="using-a-git-code-repository" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1018,7 +1116,7 @@ statements and names</li>
 </div>
 </section></section><section id="aio-running-debugging"><p>Content from <a href="running-debugging.html">Running and Debugging Code</a></p>
 <hr>
-<p>Last updated on 2025-10-28 |
+<p>Last updated on 2025-11-07 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/episodes/running-debugging.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -1085,6 +1183,22 @@ Max temperature in Celsius 16.261111111111113 Kelvin 289.4111111111111
 Max temperature in Celsius 16.33888888888889 Kelvin 289.4888888888889
 steve@laptop:~/code-style-example$ </code></pre>
 </div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Who’s run their Python progran and seen some output in a pop-up
+window?</p>
+</div>
+</div>
+</div>
+</div>
 <div id="error-the-term-conda-is-not-recognised" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1098,24 +1212,47 @@ steve@laptop:~/code-style-example$ </code></pre>
 <p>If you’re running an Anaconda distribution of Python on Windows, if
 you see this error it means that VSCode is not looking in the right
 place for Anaconda’s installation. In this case, you may need to
-configure VSCode accordingly.</p>
-<p>VSCode has a sophisticated method to access it’s inner functionality
-known as the Command Palette, which we’ll use to address this. Activate
-the Command Paletter by pressing <code>Ctrl</code> + <code>Shift</code>
-+ <code>P</code> simultaneously, then type
-<code>Terminal: Select Default Profile</code>. From the options, select
-<code>Command Prompt C:\WINDOWS\...</code>, and hopefully that should
-resolve the issue.</p>
+configure VSCode accordingly:</p>
+<ol style="list-style-type: decimal">
+<li>Activate the Command Palette, either by selecting <code>View</code>
+and <code>Command Palette</code> in the menu, or by pressing
+<code>Ctrl</code> + <code>Shift</code> + <code>P</code>
+simultaneously</li>
+<li>then type <code>Terminal: Select Default Profile</code>
+</li>
+<li>From the options, select the entry that’s something like
+<code>Command Prompt C:\WINDOWS\...</code>
+</li>
+</ol>
+<p>Hopefully that should resolve the issue.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>If you’re using Conda and encountered this error, did it fix it?</p>
 </div>
 </div>
 </div>
-<p>The pop-up window is known as the “Console”, and essentially is a
-terminal, or command prompt, where the program is run. You’ll notice we
-can also type in commands here too. For example in Windows, you could
-type <code>dir</code>, on Mac or Linux you could type <code>ls</code> -
-to get a listing of files, for example.</p>
-<p>We can also close this terminal/console at any time, and start a new
-one by selecting <code>Terminal</code> from the menu and selecting
+</div>
+</div>
+</div>
+</div>
+<p>The pop-up window is known as the “Console” or “Terminal”, and
+essentially is a terminal, or command prompt, where the program is run.
+You’ll notice that the directory where the console runs is the current
+VSCode project’s workspace location, and that we can also type in
+commands here too. For example in Windows, you could type
+<code>dir</code>, on Mac or Linux you could type <code>ls</code> - to
+get a listing of files, for example.</p>
+<p>We can also close this terminal/console at any time by selecting the
+<code>x</code> icon on the right, and start a new one by selecting
+<code>Terminal</code> from the menu and selecting
 <code>New Terminal</code>. So when we write and run our code, we have
 the option of never having to leave VSCode at all for most things.</p>
 </section><section><h2 class="section-heading" id="debugging-code">Debugging Code<a class="anchor" aria-label="anchor" href="#debugging-code"></a>
@@ -1144,13 +1281,29 @@ lot of complex stuff for us.</p>
 </h3>
 <p>Let’s assume we have a problem with our code - by introducing one. In
 our <code>climate_analysis.py</code> code, where it says
-<code>if data[0][0] != COMMENT</code>, replace <code>COMMENT</code> with
+<code>if data[0][0] != comment</code>, replace <code>comment</code> with
 <code>'!'</code>. We perhaps might assume one of our colleagues
 erroneously made this change, but we haven’t spotted it yet. We try to
 run the code as before, and now it doesn’t work. We get a
 <code>ValueError</code>, which informs us it couldn’t perform a
 conversion of a value extracted from the data file to a float as part of
 its temperature conversion.</p>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="accordion-body">
+<p>Who’s added this error into their code and sees a
+<code>ValueError</code> in the terminal output?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="adding-a-debugging-breakpoint">Adding a Debugging Breakpoint<a class="anchor" aria-label="anchor" href="#adding-a-debugging-breakpoint"></a>
@@ -1163,6 +1316,21 @@ start of the <code>for line in climate_data:</code> line. We do that by
 clicking in the left margin for that line. By hovering in the margin,
 you’ll see a faded red dot appear. Select it on that line and this sets
 the breakpoint.</p>
+<div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
+  <h3 class="accordion-header" id="headingInstructor4">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div class="accordion-body">
+<p>Who’s set a breakpoint in their code?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="using-the-debugger">Using the Debugger<a class="anchor" aria-label="anchor" href="#using-the-debugger"></a>
@@ -1179,13 +1347,30 @@ select <code>Python File</code> to debug the current file.</li>
 </ol>
 <p>Now the Python script is running in debug mode. You’ll see the
 execution has paused on the line we entered the breakpoint, which is now
-highlighted., Some new information is now displayed in various panes on
-the left of the code editor. In particular:</p>
+highlighted. Some new information is now displayed in various panes on
+the left of the code editor.</p>
+<div id="accordionInstructor5" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor5" aria-expanded="false" aria-controls="collapseInstructor5">
+  <h3 class="accordion-header" id="headingInstructor5">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
+<div class="accordion-body">
+<p>Who’s run the code in debug mode and and seen their code paused at
+the breakpoint?</p>
+</div>
+</div>
+</div>
+</div>
+<p>In particular:</p>
 <ul>
 <li>
 <code>VARIABLES</code> - on the left, we can see a list of
 variables, and their current state, at this point in the script’s
-execution, such as <code>COMMENT</code> and <code>SHIFT</code>, and
+execution, such as <code>comment</code> and <code>shift</code>, and
 <code>climate_data</code> (which is a reference to our open data file).
 We don’t have many at the moment. It also distinguishes between local
 variables and global variables - this is to do with the “scope” of the
@@ -1211,17 +1396,17 @@ call stack.</li>
 debugging:</p>
 <ul>
 <li>The first one is continue, which allows the script to keep running
-until the next breakpoint.</li>
+until the next breakpoint (if there is one)</li>
 <li>The next one allows us to step over - or through - the script one
-statement at a time.</li>
+statement at a time</li>
 <li>The next two allow us to choose to step into or out of a function
-call, which is interesting.</li>
+call, which is interesting</li>
 </ul>
 <p>If we want to examine the inner workings of a function during this
 debug session, we can do that.</p>
 <ul>
-<li>The green cycle one is to restart the debug process.</li>
-<li>The red cross stops debugging completely.</li>
+<li>The green cycle one is to restart the debug process</li>
+<li>The red cross stops debugging completely</li>
 </ul>
 <p>So let’s step through our code by selecting the second icon and see
 what happens. As we do so, we can see the variable state changing. By
@@ -1233,21 +1418,23 @@ before.</p>
 <p>This tells us something useful - that the problem occurs in the first
 iteration of the loop. So, this implies, the problem might be with the
 first line of data being processed, since the Python code is going
-through the data file line by line. If we re-run the debugger, we can go
-through this process again. And we can see something interesting when we
-get to the <code>if</code> statement. From the code, we know that the if
-statement is looking for an exclamation mark at the beginning of the
-line to indicate a comment. However, the data variable contains a ‘#’ as
-the first character instead. Therefore, in this case, the code will
-assume it’s a data line and attempt to process it as such. And then it
-will fail with the exception we saw before.</p>
+through the data file line by line. Let’s now stop the debugger by
+selecting the red square icon.</p>
+<p>If we re-run the debugger, we can go through this process again. And
+we can see something interesting when we get to the <code>if</code>
+statement. From the code, we know that the if statement is looking for
+an exclamation mark at the beginning of the line to indicate a comment.
+However, the data variable contains a ‘#’ as the first character
+instead. Therefore, in this case, the code will assume it’s a data line
+and attempt to process it as such. And then it will fail with the
+exception we saw before.</p>
 </div>
 <div class="section level3">
 <h3 id="fixing-the-issue">Fixing the Issue<a class="anchor" aria-label="anchor" href="#fixing-the-issue"></a>
 </h3>
 <p>So now we’ve identified the problem, we can fix it.</p>
 <p>Firstly, stop the debug process by selecting the red square. Then
-edit the <code>if</code> line to search for <code>COMMENT</code>
+edit the <code>if</code> line to search for <code>comment</code>
 instead, reverting the code to what it was before. We can then rerun the
 debugger if we wish, to check our understanding. And as we step through
 the code, we can see if correctly identifies the first line as a
@@ -1257,6 +1444,21 @@ the debugger again.</p>
 <p>We’ve now solved our problem, so we should remove the breakpoint.
 Running our code again as normal, we can see it now works as
 expected.</p>
+<div id="accordionInstructor6" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor6" aria-expanded="false" aria-controls="collapseInstructor6">
+  <h3 class="accordion-header" id="headingInstructor6">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor6" class="accordion-collapse collapse" aria-labelledby="headingInstructor6" data-bs-parent="#accordionInstructor6">
+<div class="accordion-body">
+<p>Who’s fixed their problem and successfully re-run their code?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="debugging-in-context">Debugging in Context<a class="anchor" aria-label="anchor" href="#debugging-in-context"></a>
 </h2>
@@ -1346,8 +1548,8 @@ use debugging to locate the source of a problem</li>
   "url": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/aio.html",
   "identifier": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/aio.html",
   "dateCreated": "2025-01-15",
-  "dateModified": "2025-11-04",
-  "datePublished": "2025-11-04"
+  "dateModified": "2025-11-07",
+  "datePublished": "2025-11-07"
 }
 
   </script><script>

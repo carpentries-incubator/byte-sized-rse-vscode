@@ -311,7 +311,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Getting Started with VSCode</h1>
-        <p>Last updated on 2025-10-28 |
+        <p>Last updated on 2025-11-07 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/episodes/running-vscode.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -421,19 +421,28 @@ extensions.</li>
 is the Microsoft official Python extension.</li>
 <li>Then select <code>Install</code>.</li>
 </ol><p>It might take a minute - you can see a sliding blue line in the top
-left to indicate it’s working. Once complete, you should see a couple of
-“Welcome” windows introducing you to two of its key features - support
-for Python and Jupyter notebooks. If you use Jupyter notebooks, which is
-a way of writing Python programs that you can run line by line from
-within an editor as you write the program, you may find this useful.</p>
+left to indicate it’s working.</p>
+
+<p>Once complete, you should see a couple of “Welcome” windows
+introducing you to two of its key features - support for Python and
+Jupyter notebooks. If you use Jupyter notebooks, which is a way of
+writing Python programs that you can run line by line from within an
+editor as you write the program, you may find this useful.</p>
 <p>For now, let’s configure this extension for our Python development,
 and to do that, we need to tell VSCode which Python installation on our
-machine we’d like it to use. In the Python Welcome window, select
-<code>Select a Python interpreter</code>, and then
-<code>Select Python interpreter</code>. You may find you have many
-installations of Python, or only have one. Try to select the version
-later than 3.8 if you can. Then select <code>Mark done</code>, and close
-the Welcome window.</p>
+machine we’d like it to use. VSCode has a sophisticated method to access
+it’s inner functionality known as the Command Palette, which we’ll use
+to address this.</p>
+<ol style="list-style-type: decimal"><li>Select <code>View</code> and <code>Command Palette</code> from the
+VSCode menu</li>
+<li>Begin typing <code>Python: Select Interpreter</code>, and then
+select it when it appears</li>
+<li>A list of available Python installations should appear. You may find
+you have many installations of Python, or only have one. Try to select
+the version later than 3.8 if you can.</li>
+</ol><p>Once selected, the default Python interpreter for VSCode will be
+configured.</p>
+
 </section><section><h2 class="section-heading" id="a-sample-project">A Sample Project<a class="anchor" aria-label="anchor" href="#a-sample-project"></a></h2>
 <hr class="half-width"><p>Next, let’s obtain some example Python and edit it from within
 VSCode. First, download the example code we’ll use from <a href="https://github.com/UNIVERSE-HPC/code-style-example/releases/tag/v1.0.0" class="external-link uri">https://github.com/UNIVERSE-HPC/code-style-example/releases/tag/v1.0.0</a>,
@@ -474,14 +483,15 @@ popup appears.</p>
 </div>
 </div>
 </div>
-<p>You’ll then likely be presented with a window asking whether you
-trust the authors of this code. In general, it’s a good idea to be at
-least a little wary, since you’re obtaining code from the internet, so
-be sure to check your sources! Be careful here - I found on Windows the
-“Trust” option appears on the left, whilst on Mac, it appears on the
-right! In this case, feel free to trust the repository! You’ll then see
-the explorer present you with some files in a small window (or pane) on
-the left you can use to navigate and find files.</p>
+
+<p>You may be presented with a window asking whether you trust the
+authors of this code. In general, it’s a good idea to be at least a
+little wary, since you’re obtaining code from the internet, so be sure
+to check your sources! Be careful here - I found on Windows the “Trust”
+option appears on the left, whilst on Mac, it appears on the right! In
+this case, feel free to trust the repository! You’ll then see the
+explorer present you with some files in a small window (or pane) on the
+left you can use to navigate and find files.</p>
 <p>So far within VSCode we have downloaded some code from a repository
 and opened a folder. Whenever we open a folder in VSCode, this is
 referred to as a “Workspace” - essentially, a collection of a project’s
@@ -568,8 +578,8 @@ opened from within VSCode</li>
   "url": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/running-vscode.html",
   "identifier": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/running-vscode.html",
   "dateCreated": "2025-01-15",
-  "dateModified": "2025-10-28",
-  "datePublished": "2025-11-04"
+  "dateModified": "2025-11-07",
+  "datePublished": "2025-11-07"
 }
 
   </script><script>

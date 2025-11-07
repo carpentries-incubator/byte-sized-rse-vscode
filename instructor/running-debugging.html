@@ -310,7 +310,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Running and Debugging Code</h1>
-        <p>Last updated on 2025-10-28 |
+        <p>Last updated on 2025-11-07 |
 
         <a href="https://github.com/carpentries-incubator/byte-sized-rse-vscode/edit/main/episodes/running-debugging.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -378,6 +378,22 @@ Max temperature in Celsius 16.261111111111113 Kelvin 289.4111111111111
 Max temperature in Celsius 16.33888888888889 Kelvin 289.4888888888889
 steve@laptop:~/code-style-example$ </code></pre>
 </div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
+<p>Who’s run their Python progran and seen some output in a pop-up
+window?</p>
+</div>
+</div>
+</div>
+</div>
 <div id="error-the-term-conda-is-not-recognised" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -391,24 +407,45 @@ steve@laptop:~/code-style-example$ </code></pre>
 <p>If you’re running an Anaconda distribution of Python on Windows, if
 you see this error it means that VSCode is not looking in the right
 place for Anaconda’s installation. In this case, you may need to
-configure VSCode accordingly.</p>
-<p>VSCode has a sophisticated method to access it’s inner functionality
-known as the Command Palette, which we’ll use to address this. Activate
-the Command Paletter by pressing <code>Ctrl</code> + <code>Shift</code>
-+ <code>P</code> simultaneously, then type
-<code>Terminal: Select Default Profile</code>. From the options, select
-<code>Command Prompt C:\WINDOWS\...</code>, and hopefully that should
-resolve the issue.</p>
+configure VSCode accordingly:</p>
+<ol style="list-style-type: decimal"><li>Activate the Command Palette, either by selecting <code>View</code>
+and <code>Command Palette</code> in the menu, or by pressing
+<code>Ctrl</code> + <code>Shift</code> + <code>P</code>
+simultaneously</li>
+<li>then type <code>Terminal: Select Default Profile</code>
+</li>
+<li>From the options, select the entry that’s something like
+<code>Command Prompt C:\WINDOWS\...</code>
+</li>
+</ol><p>Hopefully that should resolve the issue.</p>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>If you’re using Conda and encountered this error, did it fix it?</p>
 </div>
 </div>
 </div>
-<p>The pop-up window is known as the “Console”, and essentially is a
-terminal, or command prompt, where the program is run. You’ll notice we
-can also type in commands here too. For example in Windows, you could
-type <code>dir</code>, on Mac or Linux you could type <code>ls</code> -
-to get a listing of files, for example.</p>
-<p>We can also close this terminal/console at any time, and start a new
-one by selecting <code>Terminal</code> from the menu and selecting
+</div>
+</div>
+</div>
+</div>
+<p>The pop-up window is known as the “Console” or “Terminal”, and
+essentially is a terminal, or command prompt, where the program is run.
+You’ll notice that the directory where the console runs is the current
+VSCode project’s workspace location, and that we can also type in
+commands here too. For example in Windows, you could type
+<code>dir</code>, on Mac or Linux you could type <code>ls</code> - to
+get a listing of files, for example.</p>
+<p>We can also close this terminal/console at any time by selecting the
+<code>x</code> icon on the right, and start a new one by selecting
+<code>Terminal</code> from the menu and selecting
 <code>New Terminal</code>. So when we write and run our code, we have
 the option of never having to leave VSCode at all for most things.</p>
 </section><section><h2 class="section-heading" id="debugging-code">Debugging Code<a class="anchor" aria-label="anchor" href="#debugging-code"></a></h2>
@@ -434,13 +471,29 @@ lot of complex stuff for us.</p>
 <h3 id="introducing-a-problem">Introducing a Problem<a class="anchor" aria-label="anchor" href="#introducing-a-problem"></a></h3>
 <p>Let’s assume we have a problem with our code - by introducing one. In
 our <code>climate_analysis.py</code> code, where it says
-<code>if data[0][0] != COMMENT</code>, replace <code>COMMENT</code> with
+<code>if data[0][0] != comment</code>, replace <code>comment</code> with
 <code>'!'</code>. We perhaps might assume one of our colleagues
 erroneously made this change, but we haven’t spotted it yet. We try to
 run the code as before, and now it doesn’t work. We get a
 <code>ValueError</code>, which informs us it couldn’t perform a
 conversion of a value extracted from the data file to a float as part of
 its temperature conversion.</p>
+<div id="accordionInstructor3" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
+  <h3 class="accordion-header" id="headingInstructor3">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
+<div class="accordion-body">
+<p>Who’s added this error into their code and sees a
+<code>ValueError</code> in the terminal output?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="adding-a-debugging-breakpoint">Adding a Debugging Breakpoint<a class="anchor" aria-label="anchor" href="#adding-a-debugging-breakpoint"></a></h3>
@@ -452,6 +505,21 @@ start of the <code>for line in climate_data:</code> line. We do that by
 clicking in the left margin for that line. By hovering in the margin,
 you’ll see a faded red dot appear. Select it on that line and this sets
 the breakpoint.</p>
+<div id="accordionInstructor4" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
+  <h3 class="accordion-header" id="headingInstructor4">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
+<div class="accordion-body">
+<p>Who’s set a breakpoint in their code?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="using-the-debugger">Using the Debugger<a class="anchor" aria-label="anchor" href="#using-the-debugger"></a></h3>
@@ -465,12 +533,29 @@ pop-up pane near the top:</p>
 select <code>Python File</code> to debug the current file.</li>
 </ol><p>Now the Python script is running in debug mode. You’ll see the
 execution has paused on the line we entered the breakpoint, which is now
-highlighted., Some new information is now displayed in various panes on
-the left of the code editor. In particular:</p>
+highlighted. Some new information is now displayed in various panes on
+the left of the code editor.</p>
+<div id="accordionInstructor5" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor5" aria-expanded="false" aria-controls="collapseInstructor5">
+  <h3 class="accordion-header" id="headingInstructor5">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor5" class="accordion-collapse collapse" aria-labelledby="headingInstructor5" data-bs-parent="#accordionInstructor5">
+<div class="accordion-body">
+<p>Who’s run the code in debug mode and and seen their code paused at
+the breakpoint?</p>
+</div>
+</div>
+</div>
+</div>
+<p>In particular:</p>
 <ul><li>
 <code>VARIABLES</code> - on the left, we can see a list of
 variables, and their current state, at this point in the script’s
-execution, such as <code>COMMENT</code> and <code>SHIFT</code>, and
+execution, such as <code>comment</code> and <code>shift</code>, and
 <code>climate_data</code> (which is a reference to our open data file).
 We don’t have many at the moment. It also distinguishes between local
 variables and global variables - this is to do with the “scope” of the
@@ -494,15 +579,15 @@ call stack.</li>
 </ul><p>Now, we can also see some new icons at the top to do with
 debugging:</p>
 <ul><li>The first one is continue, which allows the script to keep running
-until the next breakpoint.</li>
+until the next breakpoint (if there is one)</li>
 <li>The next one allows us to step over - or through - the script one
-statement at a time.</li>
+statement at a time</li>
 <li>The next two allow us to choose to step into or out of a function
-call, which is interesting.</li>
+call, which is interesting</li>
 </ul><p>If we want to examine the inner workings of a function during this
 debug session, we can do that.</p>
-<ul><li>The green cycle one is to restart the debug process.</li>
-<li>The red cross stops debugging completely.</li>
+<ul><li>The green cycle one is to restart the debug process</li>
+<li>The red cross stops debugging completely</li>
 </ul><p>So let’s step through our code by selecting the second icon and see
 what happens. As we do so, we can see the variable state changing. By
 looking in the variables section, we can see that the <code>line</code>
@@ -513,20 +598,22 @@ before.</p>
 <p>This tells us something useful - that the problem occurs in the first
 iteration of the loop. So, this implies, the problem might be with the
 first line of data being processed, since the Python code is going
-through the data file line by line. If we re-run the debugger, we can go
-through this process again. And we can see something interesting when we
-get to the <code>if</code> statement. From the code, we know that the if
-statement is looking for an exclamation mark at the beginning of the
-line to indicate a comment. However, the data variable contains a ‘#’ as
-the first character instead. Therefore, in this case, the code will
-assume it’s a data line and attempt to process it as such. And then it
-will fail with the exception we saw before.</p>
+through the data file line by line. Let’s now stop the debugger by
+selecting the red square icon.</p>
+<p>If we re-run the debugger, we can go through this process again. And
+we can see something interesting when we get to the <code>if</code>
+statement. From the code, we know that the if statement is looking for
+an exclamation mark at the beginning of the line to indicate a comment.
+However, the data variable contains a ‘#’ as the first character
+instead. Therefore, in this case, the code will assume it’s a data line
+and attempt to process it as such. And then it will fail with the
+exception we saw before.</p>
 </div>
 <div class="section level3">
 <h3 id="fixing-the-issue">Fixing the Issue<a class="anchor" aria-label="anchor" href="#fixing-the-issue"></a></h3>
 <p>So now we’ve identified the problem, we can fix it.</p>
 <p>Firstly, stop the debug process by selecting the red square. Then
-edit the <code>if</code> line to search for <code>COMMENT</code>
+edit the <code>if</code> line to search for <code>comment</code>
 instead, reverting the code to what it was before. We can then rerun the
 debugger if we wish, to check our understanding. And as we step through
 the code, we can see if correctly identifies the first line as a
@@ -536,6 +623,21 @@ the debugger again.</p>
 <p>We’ve now solved our problem, so we should remove the breakpoint.
 Running our code again as normal, we can see it now works as
 expected.</p>
+<div id="accordionInstructor6" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor6" aria-expanded="false" aria-controls="collapseInstructor6">
+  <h3 class="accordion-header" id="headingInstructor6">
+  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div>
+  Checkpoint: Attendee Progress
+  </h3>
+</button>
+<div id="collapseInstructor6" class="accordion-collapse collapse" aria-labelledby="headingInstructor6" data-bs-parent="#accordionInstructor6">
+<div class="accordion-body">
+<p>Who’s fixed their problem and successfully re-run their code?</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="debugging-in-context">Debugging in Context<a class="anchor" aria-label="anchor" href="#debugging-in-context"></a></h2>
 <hr class="half-width"><p>Typically, we’d use debugging when we’ve discovered a problem. Other
@@ -631,8 +733,8 @@ use debugging to locate the source of a problem</li>
   "url": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/running-debugging.html",
   "identifier": "https://carpentries-incubator.github.io/byte-sized-rse-vscode/instructor/running-debugging.html",
   "dateCreated": "2025-01-15",
-  "dateModified": "2025-10-28",
-  "datePublished": "2025-11-04"
+  "dateModified": "2025-11-07",
+  "datePublished": "2025-11-07"
 }
 
   </script><script>
