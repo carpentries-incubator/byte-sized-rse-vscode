@@ -64,6 +64,7 @@ Let’s look at what most IDEs offer - these features all work together to make 
 - Debugging tools for setting breakpoints, stepping through code, and inspecting variables during runtime
 - An integrated terminal for executing commands directly within the IDE
 - A project/file explorer for easy navigation and management of your software project
+- Viewing various files in different file formats (CSV, JSON, YAML, images, HTML, etc.) that are part of your software project 
 
 Some IDEs also offer: 
 
