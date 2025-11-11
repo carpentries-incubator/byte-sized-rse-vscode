@@ -18,3 +18,7 @@ At the end of this lesson, learners should be able to:
 - Explain the importance of debugging and list common debugging techniques
 - Demonstrate how to use a debugger within an IDE like Visual Studio Code
 - Recognise the benefits of using an IDE for improving code quality, reducing errors, and accelerating software development
+
+### Slides
+
+[Slides](https://docs.google.com/presentation/d/1qNyDV3VDwv6Z3RHwfn5hL0pFxzK_DsWN3bPMjwV7Uoc/edit?usp=sharing) available under CC BY 4.0 licence.
