@@ -25,4 +25,4 @@ At the end of this lesson, learners should be able to:
 
 ### Recordings
 
-- [Recording of the "Integrated Development Environments (IDEs)" session delivered at SSI's RSC7, 12 November 2025](https://www.youtube.com/watch?v=IkoWZ9KO2mM)
+- [Recording of the "Integrated Development Environments (IDEs)" session delivered at SSI's RSC7, 11 November 2025](https://www.youtube.com/watch?v=IkoWZ9KO2mM)
